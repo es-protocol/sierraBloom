@@ -1,0 +1,431 @@
+/*Add Some basic styling*/
+body{
+    font-family: Aerial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+header, section, footer{
+    padding: 20px;
+    text-align: center;
+}
+
+section{
+    width: 80%;
+}
+
+header{
+    background-color: #f9f9fb;
+    color:  black;
+    padding: 6px 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1{
+    font-family: 'Cinzel Decorative';
+    color: #008080;
+    font-size: 4rem;
+    text-align: left;
+    text-shadow: 2px 2px 10px #008080;
+}
+
+h2{
+    font-family: 'Cinzel Decorative';
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2em;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    padding-left: 30px;
+}
+
+header p{
+    font-size: 1em;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    padding-left: 30px;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    display: inline;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p, li{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+nav.main-navigation a,
+.homepage-aside ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover{
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.nav-container{
+    width: 70%;
+    margin: 0 auto;
+}
+/* Set up the grid layout with two columns: one for the sidebar and one for the main content */
+
+.page-container{
+    display: block;
+    grid-template-columns: 250px 1fr;/*side bar is fixed at 250px. Main content takes the remaining space*/
+    height: auto;
+    overflow: hidden;/*prevent the entire page from scrolling*/
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+
+
+/*style for main content area*/
+.main-content{
+    overflow-y: auto; /*enable scrolling only in the main content*/
+    padding: 20px;
+    height: 100vh; /* Full viewport height to enable independent scrolling */
+    margin-left: -20;
+    width: 80%;
+}
+
+.contact-section{
+    max-width: 900px; /*Maximum width of the contact section*/
+    margin: 40px auto;/*Centering the section with margin*/
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);/*Subtle shadow*/
+    text-align: center;
+
+}
+
+.contact-section h2{
+    font-size: 24px;
+    margin-bottom: 10px; /*Space below heading*/
+    color: #333;
+}
+
+.contact-section p{
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.form-group{
+    margin: 15px;/*Space between form elements*/
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:hover,
+textarea:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.cta-button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /*Smooth transition for background color*/
+    flex: 1; /*Equal width buttons*/
+}
+.cta-button:hover {
+     background-color: #0056b3; /* Darker blue on hover */
+}
+.investor-button {
+    background-color: #28a745; /* Green for investor sign-up */
+}
+.investor-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+.entrepreneur-button {
+    background-color: #ffc107; /* Yellow for entrepreneur sign-up */
+}
+.entrepreneur-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.cta-button a{
+    text-decoration: none;
+}
+
+.gallery-placeholder{
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.gallery-slider{
+    display: flex;
+    transition: transform 0.5s ease-in-out; /*Smooth transition */
+    width: 100%; /*Adjust according to number of images */
+}
+
+.gallery-slide{
+    min-width: 100%; /* Full width for each slide */
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-slide img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about-section{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+section.why-section{
+    background-color: #f4f4f4
+}
+
+.why-section-content{
+    text-align: center;
+    max-width: 800px;
+}
+
+.why-section-content h2{
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.why-section-content p{
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sectors-section{
+    margin: 20px;
+    background-color: #f9f9fb;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.sectors-section h2{
+    text-align: center;
+    color: #333;
+}
+
+.accordion{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.accordion-header{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover{
+    background-color: #f1f1f1;
+}
+
+.accordion-content{
+    padding: 15px;
+    display: none; /*hidden by default*/
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.accordion-content.active{
+    display: block;
+}
+
+/*List styling*/
+.stat-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.stat-list li{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /*Hover effect*/
+    flex: 1 1 200px;/*Flex grow and flex shrink for responsive layout*/
+}
+
+.stat-list a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #333;
+}
+
+.stat-list img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.stat-list li:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.why-section{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.35s ease;
+}
+
+.card:hover{
+    transform: scale(1.05); /*slight zoom effect on hover*/
+
+}
+
+.about-content{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    background-color: #c3cfc8;
+}
+
+.about-text, .mission-text{
+    flex: 1;
+}
+
+@media(max-width: 768px){
+    .about-content{
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+.box{
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    width: 50%;
+    text-align: center;
+}
+
+.vision-text h3, .mission-text h3{
+    margin-bottom: 8px;
+}
+
+.vision-text p, .mission-text p{
+    font-size: 1.1rem;
+    margin: 0;
+}
+section{
+    padding: 50px 20px;
+}
+
+.about-section, .why-section, .sectors-section, .contact-section{
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.stat-list, .sector-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.stat-list li, .sector-list li{
+    display: inline-block;
+    margin: 10px;
+}
+
+footer{
+    background-color: #f9f9fb;
+    color: black;
+    padding: 10px 20px;
+}
+
+footer a{
+    color: black;
+    margin: 0px;
+}
