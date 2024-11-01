@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|7CCinzel+Decorative:700">
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="static/styles/styles.css">
+
         <title>Home</title>
     </head>
     <body>
@@ -38,15 +39,15 @@
                         </div>
 
                         <div class="gallery-slide">
-                            <img src="images/sierra2.avif" alt="#">
+                            <img src="d:/sierra-bloom/images/sierra2.avif" alt="#">
                         </div>
 
                         <div class="gallery-slide">
-                            <img src="images/Sierra3.webp" alt="#">
+                            <img src="d:/sierra-bloom/images/Sierra3.webp" alt="#">
                         </div>
                         
                         <div class="gallery-slide">
-                            <img src="images/sierra-5.jpg" alt="#">
+                            <img src="d:/sierra-bloom/images/sierra-5.jpg" alt="#">
                         </div>
                     </div>
                 </section>
@@ -142,7 +143,7 @@
                 </section>
 
             </main>
-            <script src="scripts/script.js"></script>
+
         </div>
         <!--Footer Section-->
         <section>
@@ -160,5 +161,6 @@
                 </div>
             </footer>
         </section>
+        <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
     </body>
 </html>

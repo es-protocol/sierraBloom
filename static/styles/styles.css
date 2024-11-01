@@ -179,7 +179,7 @@ textarea:focus{
      background-color: #0056b3; /* Darker blue on hover */
 }
 .investor-button {
-    background-color: #28a745; /* Green for investor sign-up */
+    background-color: black; /* Green for investor sign-up
 }
 .investor-button:hover {
     background-color: #218838; /* Darker green on hover */

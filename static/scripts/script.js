@@ -1,3 +1,4 @@
+
 let currentIndex = 0;
 // Use querySelectorAll to get all elements with the class 'gallery-slide'
 const slides = Array.from(document.querySelectorAll('.gallery-slide'));
@@ -42,6 +43,9 @@ accordionHeader.forEach(header => {
 
         //Toggle thhe active class on content
         content.classList.toggle('active');
+
+
+console.log("JavaScript file loaded successfully!");
 
         
     });
