@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|7CCinzel+Decorative:700">
+        <meta name="author" content="Thomas Smart">
+        <title>Projects</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Our Projects</h1>
+            <ul>
+                {% for key, value in project.items() %}
+                    {% if key == '003' %}
+                        <s>{{ value }}</s>
+                    {% else %}
+                        <li>
+                            <a href="{{ url_for('investor') }}" style="text-decoration: none;">{{ value }}</a><br>
+                            <button type="submit" class="cta-button download_pitch_deck">Pitch Deck</button>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
+            <button type="submit" class="cta-button back-homepage"><a href="{{url_for('index')}}" style="text-decoration: none;">Back</a></button>
+        </header>
+    </body>
+</html>

@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="static/styles/styles.css">
         <title>Home</title>
     </head>
-    <body>
-        <!--Hero Section-->
+    <body> 
         <header class="header-content">
             <h1>Sierra Bloom</h1>
             <p>Unlocking Investment Opportunities</p>
@@ -19,10 +18,11 @@
                     <ul>
                         <li><a href="{{url_for('index')}}" style="text-decoration: none;">Home</a></li>
                         <li><a href="{{url_for('about')}}">About Us</a></li>
-                        <li><a href="#">Our Projects</a></li>
-                        <li><a href="#">Investors</a></li>
-                        <li><a href="#">Entrepreneurs</a></li>
+                        <li><a href="{{url_for('projects')}}">Our Projects</a></li>
+                        <li><a href="{{url_for('investor')}}">Investors</a></li>
+                        <li><a href="{{url_for('entrepreneur')}}">Entrepreneurs</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="{{url_for('legal')}}">Privacy</a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,6 +45,7 @@
                         </div>
                     </div>
                 </section>
+
                 <!--About Section-->
                 <section class="about-section">
                     <h2>About Us</h2>

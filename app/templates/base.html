@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta name="author" content="Thomas Smart">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|7CCinzel+Decorative:700">
+        <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+        <title>Base</title>
+    </head>
+    <body>
+        <header class="header-content">
+            <h1>Sierra Bloom</h1>
+            <p>Unlocking Investment Opportunities</p>
+            <!--Navigation Menu-->
+            <div class="nav-container">
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="{{url_for('index')}}" style="text-decoration: none;">Home</a></li>
+                        <li><a href="{{url_for('about')}}">About Us</a></li>
+                        <li><a href="{{url_for('projects')}}">Our Projects</a></li>
+                        <li><a href="{{url_for('investor')}}">Investors</a></li>
+                        <li><a href="{{url_for('entrepreneur')}}">Entrepreneurs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="page-container">
+            <main class="main-content">
+            
+            </main>
+        </div>
+        <!--Footer Section-->
+        <section>
+            <footer class="footer-section">
+                <div class="footer-text">
+                    <p style="font-size: 14px;"> 2024 SierraBloom. All Rights Reserved</p>
+                    <a href="#" style="font-size: 14px;">Privacy Policy</a>
+                    <a href="#" style="font-size: 14px;">Terms Of Service</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/sierrabloom/?viewAsMember=true">Linkedin</a>
+                    <a href="#">Faceook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </footer>
+        </section>
+        <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+    </body>
+</html>
