@@ -17,14 +17,14 @@
                         <s>{{ value }}</s>
                     {% else %}
                         <li>
-                            <a href="{{ url_for('investor') }}" style="text-decoration: none;">{{ value }}</a><br>
+                            <a href="{{ url_for('sierra_b.investor') }}" style="text-decoration: none;">{{ value }}</a><br>
                             <button type="submit" class="cta-button download_pitch_deck">Pitch Deck</button>
                         </li>
                     {% endif %}
                 {% endfor %}
             </ul>
             
-            <button type="submit" class="cta-button back-homepage"><a href="{{url_for('index')}}" style="text-decoration: none;">Back</a></button>
+            <button type="submit" class="cta-button back-homepage"><a href="{{url_for('sierra_b.index')}}" style="text-decoration: none;">Back</a></button>
         </header>
     </body>
 </html>
