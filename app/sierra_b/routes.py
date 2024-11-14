@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template
+from .models import Project
 
 bleuprint = Blueprint('sierra_b', __name__)
 
